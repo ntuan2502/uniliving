@@ -9,3 +9,7 @@ updated: 2026-05-25
 ## Git Workflow
 - Always create a new dedicated branch for major code changes.
 - Branch name format should follow: `feature/[task-slug]` or `fix/[bug-slug]`.
+
+## Command Usage
+- Always use `pnpm` or `pnpx` (or `pnpm dlx`).
+- **Forbidden:** Never use `npm` or `npx` commands.

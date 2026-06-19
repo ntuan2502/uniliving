@@ -1,0 +1,34 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client"
+  output   = "./generated"
+}
+
+model Room {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  price       Int      // Price in VND
+  address     String
+  district    String   // e.g. "Quận 10", "Bình Thạnh"
+  imageUrl    String   // URL or local file path
+  amenities   String[] // Array of amenities, e.g. ["Wifi", "Máy giặt", "Ban công"]
+  status      String   @default("AVAILABLE") // "AVAILABLE" or "RENTED"
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Lead {
+  id        String   @id @default(uuid())
+  name      String
+  phone     String
+  district  String   // Preferred district
+  budget    Int      // Budget in VND
+  note      String?
+  status    String   @default("NEW") // "NEW", "CONTACTED", "COMPLETED"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

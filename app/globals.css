@@ -1,26 +1,110 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4f6f3; /* Cozy Sage background */
+  --foreground: #1c271b; /* Deep forest green */
+
+  --background-sage: #f4f6f3;
+  --primary-olive: #4e6542; /* Olive green */
+  --primary-olive-hover: #3c5032;
+  --accent-terracotta: #9c6644; /* Terracotta brown */
+  --accent-terracotta-hover: #825335;
+  --card-bg: #ffffff;
+  --border-olive: #d5ded3;
+
+  /* shadcn mappings */
+  --card: #ffffff;
+  --card-foreground: #1c271b;
+  
+  --popover: #ffffff;
+  --popover-foreground: #1c271b;
+  
+  --primary: #4e6542;
+  --primary-foreground: #ffffff;
+  
+  --secondary: #edf1ec;
+  --secondary-foreground: #4e6542;
+  
+  --muted: #edf1ec;
+  --muted-foreground: #61725e;
+  
+  --accent: #9c6644;
+  --accent-foreground: #ffffff;
+  
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  
+  --border: #d5ded3;
+  --input: #d5ded3;
+  --ring: #4e6542;
+  --radius: 1.25rem; /* Cozy 20px rounded corners */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-sage: var(--background-sage);
+  --color-olive: var(--primary-olive);
+  --color-olive-hover: var(--primary-olive-hover);
+  --color-terracotta: var(--accent-terracotta);
+  --color-terracotta-hover: var(--accent-terracotta-hover);
+  --color-card-bg: var(--card-bg);
+  --color-border-olive: var(--border-olive);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 0.25rem);
+  --radius-sm: calc(var(--radius) - 0.5rem);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
 }
 
 body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom shadow of leaves effect overlay */
+.leaf-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M30,20 Q45,10 60,30 Q40,45 30,20 Z' fill='rgba(78,101,66,0.012)'/%3E%3Cpath d='M70,60 Q80,45 90,70 Q75,80 70,60 Z' fill='rgba(78,101,66,0.009)'/%3E%3C/svg%3E");
+  z-index: 99;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
