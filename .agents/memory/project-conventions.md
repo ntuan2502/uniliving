@@ -17,3 +17,11 @@ updated: 2026-05-25
 ## Import Paths & Aliases
 - Always use import aliases (e.g., `@/*` mapping to `src/*`) instead of relative paths (e.g., `../../`) to avoid clutter and path-resolution bugs.
 
+## Code Quality & Verification
+- Always run `pnpm lint` after every code change to check for linting or formatting errors before completion.
+
+## TypeScript Types
+- Strictly forbid the use of the `any` type in TypeScript files. Always use specific types, generics, or `unknown` where applicable.
+
+
+

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import Image from "next/image";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { RoomData } from "./room-card";
@@ -128,8 +128,6 @@ const syncThumbnailsScroll = (
   }
 };
 
-import { useCallback } from "react";
-
 export default function RoomDetailModal({ room, isOpen, onClose }: RoomDetailModalProps) {
   const [activeImage, setActiveImage] = useState("");
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
@@ -143,12 +141,15 @@ export default function RoomDetailModal({ room, isOpen, onClose }: RoomDetailMod
   const mainDragRef = useDragToScroll();
   const lightboxDragRef = useDragToScroll();
 
-  const gallery = room
-    ? (Array.isArray(room.imageUrl) ? room.imageUrl : [room.imageUrl].filter(Boolean))
-    : [];
-  if (room && gallery.length === 0) {
-    gallery.push("/placeholder-room.jpg");
-  }
+  const gallery = useMemo(() => {
+    const list = room
+      ? (Array.isArray(room.imageUrl) ? room.imageUrl : [room.imageUrl].filter(Boolean))
+      : [];
+    if (room && list.length === 0) {
+      list.push("/placeholder-room.jpg");
+    }
+    return list;
+  }, [room]);
 
   const centerThumbnail = (index: number) => {
     const container = thumbnailsRef.current;
@@ -241,14 +242,14 @@ export default function RoomDetailModal({ room, isOpen, onClose }: RoomDetailMod
     }
   }, [lightboxIndex, isLightboxOpen]);
 
-  useEffect(() => {
-    if (room) {
-      const firstImg = Array.isArray(room.imageUrl) && room.imageUrl.length > 0
-        ? room.imageUrl[0]
-        : (typeof room.imageUrl === "string" ? room.imageUrl : "") || "/placeholder-room.jpg";
-      setActiveImage(firstImg);
-    }
-  }, [room]);
+  const [prevRoomId, setPrevRoomId] = useState<string | null>(null);
+  if (room && room.id !== prevRoomId) {
+    setPrevRoomId(room.id);
+    const firstImg = Array.isArray(room.imageUrl) && room.imageUrl.length > 0
+      ? room.imageUrl[0]
+      : (typeof room.imageUrl === "string" ? room.imageUrl : "") || "/placeholder-room.jpg";
+    setActiveImage(firstImg);
+  }
 
   if (!room) return null;
 
