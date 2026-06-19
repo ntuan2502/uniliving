@@ -60,7 +60,7 @@ export default function RoomDialog({ room, isOpen, onClose, onSaveSuccess }: Roo
       setPrice(room.price.toString());
       setAddress(room.address);
       setDistrict(room.district);
-      setImageUrl(room.imageUrl);
+      setImageUrl(Array.isArray(room.imageUrl) ? room.imageUrl.join("\n") : room.imageUrl || "");
       setSelectedAmenities(room.amenities);
       setStatus(room.status);
     } else {
@@ -96,13 +96,18 @@ export default function RoomDialog({ room, isOpen, onClose, onSaveSuccess }: Roo
       return;
     }
 
+    const imageUrlsArray = imageUrl
+      .split("\n")
+      .map((url) => url.trim())
+      .filter((url) => url !== "");
+
     const payload = {
       title,
       description,
       price: parsedPrice,
       address,
       district,
-      imageUrl: imageUrl || "/placeholder-room.jpg",
+      imageUrl: imageUrlsArray.length > 0 ? imageUrlsArray : ["/placeholder-room.jpg"],
       amenities: selectedAmenities,
       status,
     };
@@ -189,14 +194,14 @@ export default function RoomDialog({ room, isOpen, onClose, onSaveSuccess }: Roo
           </div>
 
           <div className="space-y-1.5">
-            <Label htmlFor="imageUrl" className="text-xs font-bold text-foreground">Link hình ảnh phòng (URL) *</Label>
-            <Input
+            <Label htmlFor="imageUrl" className="text-xs font-bold text-foreground">Link hình ảnh phòng (Mỗi link 1 dòng) *</Label>
+            <Textarea
               id="imageUrl"
               required
               value={imageUrl}
               onChange={(e) => setImageUrl(e.target.value)}
-              placeholder="Nhập link ảnh (ví dụ: https://images.unsplash.com/photo-...)"
-              className="rounded-xl border-border-olive"
+              placeholder="Nhập các link ảnh Unsplash, mỗi dòng một link ảnh để hiển thị slide."
+              className="rounded-xl border-border-olive min-h-[100px]"
             />
           </div>
 

@@ -11,7 +11,7 @@ export interface RoomData {
   price: number;
   address: string;
   district: string;
-  imageUrl: string;
+  imageUrl: string[];
   amenities: string[];
   status: string;
 }
@@ -38,7 +38,7 @@ export default function RoomCard({ room, onOpenDetails }: RoomCardProps) {
       {/* Image Container with Olive Frame effect */}
       <div className="relative aspect-4/3 w-full overflow-hidden border-b-2 border-border-olive">
         <Image
-          src={room.imageUrl || "/placeholder-room.jpg"}
+          src={(Array.isArray(room.imageUrl) ? room.imageUrl[0] : room.imageUrl) || "/placeholder-room.jpg"}
           alt={room.title}
           fill
           sizes="(max-w-7xl) 33vw, 50vw, 100vw"

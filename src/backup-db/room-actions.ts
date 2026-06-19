@@ -99,7 +99,7 @@ export async function createRoom(data: {
   price: number;
   address: string;
   district: string;
-  imageUrl: string[];
+  imageUrl: string;
   amenities: string[];
   status?: string;
 }) {
@@ -111,7 +111,7 @@ export async function createRoom(data: {
         price: data.price,
         address: data.address,
         district: data.district,
-        imageUrl: data.imageUrl || ["/placeholder-room.jpg"],
+        imageUrl: data.imageUrl || "/placeholder-room.jpg",
         amenities: data.amenities,
         status: data.status || "AVAILABLE",
       },
@@ -135,7 +135,7 @@ export async function updateRoom(
     price?: number;
     address?: string;
     district?: string;
-    imageUrl?: string[];
+    imageUrl?: string;
     amenities?: string[];
     status?: string;
   }

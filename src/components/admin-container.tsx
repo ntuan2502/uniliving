@@ -173,7 +173,7 @@ export default function AdminContainer({ initialRooms, initialLeads }: AdminCont
                         <div className="relative h-12 w-16 overflow-hidden rounded-xl border border-border-olive">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
-                            src={room.imageUrl || "/placeholder-room.jpg"}
+                            src={(Array.isArray(room.imageUrl) ? room.imageUrl[0] : room.imageUrl) || "/placeholder-room.jpg"}
                             alt={room.title}
                             className="object-cover h-full w-full"
                           />
