@@ -1,0 +1,332 @@
+{
+  "rooms": [
+    {
+      "id": "room-1",
+      "title": "Phòng trọ 3/2 Diên Hồng - Cozy Sage Studio",
+      "description": "Căn hộ dịch vụ thiết kế phong cách Cozy Sage cực kỳ ấm cúng và gần gũi với thiên nhiên. Vách ngăn kính xanh ô-liu sang trọng, đầy đủ nội thất gỗ cao cấp (giường, bàn học, tủ lạnh, bếp nấu ăn). Nhà vệ sinh riêng được ốp gạch mosaic xanh ngọc lục bảo rất sang trọng.",
+      "price": 5500000,
+      "address": "Đường 3 Tháng 2 giao Diên Hồng, Phường 11, Quận 10, TP.HCM",
+      "district": "Quận 10",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "New",
+        "Green",
+        "Full",
+        "1 phòng ngủ",
+        "Wifi",
+        "Máy giặt",
+        "Ban công"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-2",
+      "title": "Căn hộ Studio Green Oasis - Nguyễn Gia Trí",
+      "description": "Không gian sống xanh mát ngay trung tâm Bình Thạnh, gần các trường đại học HUTECH, Ngoại Thương. Phòng có ban công rộng rãi đón ánh sáng tự nhiên, trang bị máy giặt riêng, tủ lạnh hai cánh, khoá cửa vân tay an toàn tuyệt đối.",
+      "price": 6800000,
+      "address": "Nguyễn Gia Trí, Phường 25, Quận Bình Thạnh, TP.HCM",
+      "district": "Bình Thạnh",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "Green",
+        "Full",
+        "Wifi",
+        "Tủ lạnh",
+        "Ban công",
+        "Bảo vệ 24/7"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-3",
+      "title": "Phòng trọ gác lửng cao cấp - Lê Văn Sỹ Quận 3",
+      "description": "Phòng trọ mới xây thiết kế gác lửng thông minh, nội thất đầy đủ tối ưu hoá diện tích. Thích hợp cho sinh viên hoặc nhân viên văn phòng đi làm tại trung tâm Quận 3, Quận 1. Giờ giấc tự do, không chung chủ.",
+      "price": 4200000,
+      "address": "Lê Văn Sỹ, Phường 13, Quận 3, TP.HCM",
+      "district": "Quận 3",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "New",
+        "Full",
+        "Wifi",
+        "Máy giặt",
+        "Khu vệ sinh riêng"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-4",
+      "title": "Căn hộ Studio Penthouse Mini - Nguyễn Huệ Quận 1",
+      "description": "Căn hộ dịch vụ phong cách Luxury hiện đại, toạ lạc ngay phố đi bộ Nguyễn Huệ sầm uất. Căn hộ thiết kế kính tràn viền view toàn cảnh thành phố, đầy đủ tiện nghi cao cấp chuẩn khách sạn 4 sao. Có bồn tắm nằm riêng, máy sấy quần áo riêng biệt.",
+      "price": 9500000,
+      "address": "Đường Nguyễn Huệ, Phường Bến Nghé, Quận 1, TP.HCM",
+      "district": "Quận 1",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1618219740975-d40978bb7378?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "New",
+        "Full",
+        "Wifi",
+        "Bảo vệ 24/7",
+        "Ban công",
+        "Tủ lạnh",
+        "Khu vệ sinh riêng"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-5",
+      "title": "Phòng trọ Eco-Friendly xanh mát - Quang Trung Gò Vấp",
+      "description": "Phòng trọ được phủ cây xanh tự nhiên quanh ban công và giếng trời, tạo môi trường cực kỳ mát mẻ và thư giãn. Tiết kiệm điện năng nhờ thiết kế thông gió đối lưu. Nội thất tái chế tinh tế và thân thiện với môi trường.",
+      "price": 3500000,
+      "address": "Đường Quang Trung, Phường 10, Quận Gò Vấp, TP.HCM",
+      "district": "Gò Vấp",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1501183007986-d0d080b147f9?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "Green",
+        "New",
+        "Wifi",
+        "Máy giặt",
+        "Ban công"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-6",
+      "title": "Căn hộ Loft House Hàn Quốc - Phan Xích Long",
+      "description": "Căn hộ mang tone màu kem gỗ ấm áp chuẩn phong cách Hàn Quốc xịn sò. Không gian sống đầy chất thơ với các nội thất nhỏ xinh tinh tế, ban công ngập nắng ngắm phố phường Phú Nhuận yên bình. Phù hợp cho các bạn trẻ thích chụp ảnh check-in và decor.",
+      "price": 5800000,
+      "address": "Phan Xích Long, Phường 2, Quận Phú Nhuận, TP.HCM",
+      "district": "Phú Nhuận",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "New",
+        "Full",
+        "Wifi",
+        "Tủ lạnh",
+        "Khu vệ sinh riêng",
+        "Ban công"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-7",
+      "title": "Studio Căn hộ Nhật Bản Muji Style - Cộng Hòa",
+      "description": "Phong cách tối giản Nhật Bản (Muji style) sử dụng chất liệu gỗ sồi tự nhiên màu sáng và vải lanh. Căn hộ thiết kế vuông vức, tối ưu hóa các không gian lưu trữ ẩn. Yên tĩnh, an ninh tốt, bãi giữ xe rộng rãi thuận tiện.",
+      "price": 6000000,
+      "address": "Cộng Hòa, Phường 12, Quận Tân Bình, TP.HCM",
+      "district": "Tân Bình",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1519643381401-22c77e60520e?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "Green",
+        "Full",
+        "Wifi",
+        "Tủ lạnh",
+        "Khu vệ sinh riêng",
+        "Bảo vệ 24/7"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-8",
+      "title": "Căn hộ Duplex Ban Công rộng - Nguyễn Thị Thập Q7",
+      "description": "Căn hộ thông tầng (Duplex) hiện đại với cửa sổ kính sát trần siêu rộng đón ánh sáng ngập tràn. Tọa lạc vị trí đắc địa gần Lotte Mart, RMIT, đại học Tôn Đức Thắng. Có ban công riêng cực rộng để trồng cây hoặc set-up bàn trà thư giãn.",
+      "price": 7500000,
+      "address": "Nguyễn Thị Thập, Phường Tân Hưng, Quận 7, TP.HCM",
+      "district": "Quận 7",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "New",
+        "Full",
+        "Wifi",
+        "Máy giặt",
+        "Ban công",
+        "Bảo vệ 24/7"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-9",
+      "title": "Căn hộ Dịch vụ Studio Khép Kín - Huỳnh Văn Bánh",
+      "description": "Phù hợp cho người đi làm hoặc người nước ngoài lưu trú ngắn hạn/dài hạn tại Phú Nhuận. Thiết kế khép kín cực kỳ riêng tư, cách âm tốt. Dịch vụ dọn phòng 2 lần/tuần đã bao gồm trong giá thuê. Gần sân bay Tân Sơn Nhất và các khu ăn uống sầm uất.",
+      "price": 4800000,
+      "address": "Huỳnh Văn Bánh, Phường 10, Quận Phú Nhuận, TP.HCM",
+      "district": "Phú Nhuận",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1502672023488-70e25813eb80?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "New",
+        "Full",
+        "Wifi",
+        "Máy giặt",
+        "Tủ lạnh",
+        "Khu vệ sinh riêng"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-10",
+      "title": "Căn hộ Studio Industrial Loft - Điện Biên Phủ",
+      "description": "Căn hộ thiết kế độc đáo theo phong cách công nghiệp (Industrial) với tường xi măng mài, gạch trần đỏ ấm áp kết hợp kim loại đen cá tính. Hệ thống chiếu sáng spotlight vàng ấm tạo không gian vô cùng chill về đêm. Vị trí giáp ranh Quận 1 rất tiện di chuyển.",
+      "price": 7200000,
+      "address": "Điện Biên Phủ, Phường 15, Quận Bình Thạnh, TP.HCM",
+      "district": "Bình Thạnh",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1618219740975-d40978bb7378?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "New",
+        "Full",
+        "Wifi",
+        "Bảo vệ 24/7",
+        "Ban công",
+        "Khu vệ sinh riêng"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-11",
+      "title": "Phòng trọ Sinh Viên Cao Cấp - Lý Thường Kiệt Q10",
+      "description": "Phòng trọ sạch sẽ, mới xây ngay sát Đại học Bách Khoa TP.HCM. Phòng trang bị sẵn giường tầng hoặc giường đơn gỗ cao cấp, bàn học rộng, máy lạnh tiết kiệm điện Inverter. Khu giặt sấy sử dụng miễn phí ở sân thượng. Khóa vân tay ra vào an toàn.",
+      "price": 5200000,
+      "address": "Lý Thường Kiệt, Phường 14, Quận 10, TP.HCM",
+      "district": "Quận 10",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "New",
+        "Wifi",
+        "Máy giặt",
+        "Bảo vệ 24/7",
+        "Khu vệ sinh riêng"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "room-12",
+      "title": "Căn hộ Vintage Retro Studio - Nguyễn Đình Chiểu",
+      "description": "Căn hộ dịch vụ mang đậm hơi thở Sài Gòn xưa pha lẫn nét hiện đại (phong cách Đông Dương - Indochine). Sàn lát gạch bông cổ điển, nội thất gỗ mây tự nhiên trầm ấm. Không gian thoáng đãng, nhiều cây xanh, ban công rộng lộng gió mát mẻ cả ngày.",
+      "price": 6500000,
+      "address": "Nguyễn Đình Chiểu, Phường 6, Quận 3, TP.HCM",
+      "district": "Quận 3",
+      "imageUrl": [
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=1000"
+      ],
+      "amenities": [
+        "Green",
+        "Full",
+        "Wifi",
+        "Ban công",
+        "Khu vệ sinh riêng",
+        "Máy giặt"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-06-19T00:00:00.000Z",
+      "updatedAt": "2026-06-19T00:00:00.000Z"
+    }
+  ],
+  "leads": []
+}
