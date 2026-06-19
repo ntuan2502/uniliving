@@ -71,10 +71,9 @@ export default function FilterSection({ onFilterChange }: FilterSectionProps) {
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 py-8">
-      {/* Search & District Select Capsule */}
       <form
         onSubmit={handleSearchSubmit}
-        className="flex flex-col sm:flex-row gap-3 items-center bg-white border border-border-olive rounded-full p-2 pl-6 shadow-sm transition-all hover:shadow-md focus-within:ring-2 focus-within:ring-olive/20"
+        className="flex flex-col sm:flex-row gap-3 items-center bg-white border border-border-olive rounded-3xl sm:rounded-full p-4 sm:p-2 sm:pl-6 shadow-sm transition-all hover:shadow-md focus-within:ring-2 focus-within:ring-olive/20"
       >
         <div className="flex flex-1 w-full items-center gap-2">
           <Search className="h-5 w-5 text-muted-foreground shrink-0" />
@@ -87,7 +86,7 @@ export default function FilterSection({ onFilterChange }: FilterSectionProps) {
           />
         </div>
 
-        <div className="flex w-full sm:w-auto items-center gap-2 border-t sm:border-t-0 sm:border-l border-border-olive pt-2 sm:pt-0 sm:pl-4">
+        <div className="flex w-full sm:w-auto items-center gap-2 border-t sm:border-t-0 sm:border-l border-border-olive pt-3 sm:pt-0 sm:pl-4">
           <select
             value={district}
             onChange={(e) => handleDistrictChange(e.target.value)}
@@ -103,9 +102,10 @@ export default function FilterSection({ onFilterChange }: FilterSectionProps) {
 
         <button
           type="submit"
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-terracotta hover:bg-terracotta-hover text-white shadow-sm transition-all"
+          className="flex h-12 w-full sm:h-11 sm:w-36 shrink-0 items-center justify-center rounded-xl sm:rounded-full bg-terracotta hover:bg-terracotta-hover text-white shadow-sm transition-all gap-2 cursor-pointer font-semibold"
         >
           <Search className="h-5 w-5" />
+          <span>Tìm kiếm</span>
         </button>
       </form>
 
