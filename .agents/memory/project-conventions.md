@@ -13,3 +13,7 @@ updated: 2026-05-25
 ## Command Usage
 - Always use `pnpm` or `pnpx` (or `pnpm dlx`).
 - **Forbidden:** Never use `npm` or `npx` commands.
+
+## Import Paths & Aliases
+- Always use import aliases (e.g., `@/*` mapping to `src/*`) instead of relative paths (e.g., `../../`) to avoid clutter and path-resolution bugs.
+
